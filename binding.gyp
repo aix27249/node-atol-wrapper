@@ -69,10 +69,10 @@
       "conditions":[
       	["OS=='linux'", {
       	  "link_settings": {
-      	    "libraries": ["-lfptr10", ],
+      	    "libraries": ["-lfptr10" ],
       	    "ldflags": [
-      	       "-L<(module_root_dir)/build/Release",
-      	       "-Wl,-rpath,<(module_root_dir)/build/Release"
+      	       "-LRelease",
+      	       "-Wl,-rpath,./node_modules/node-atol-wrapper/build/Release"
       	    ],
       	  },
       	}],
